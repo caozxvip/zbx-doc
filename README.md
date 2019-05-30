@@ -1101,12 +1101,10 @@ header.html代码，使用`nav-bind`绑定侧边栏菜单：
 
 > 关键代码就是在success回调中写上面那句话。
 
-## 8.扩展图标
-
 ### 8.1 引入扩展图标
 1. 成为iconfont真保蟹项目成员；
 2. 搜索并添加想要的图标到真保蟹项目，重新生成在线链接；
-3. 复制生成的链接到insurance-zbx\src\main\resources\static\assets\js\common.js文件中修改即可：
+3. 复制生成的链接到`insurance-zbx\src\main\resources\static\assets\js\common.js`文件中修改即可：
 
 ![iconfont](http://zhenbaoxie.profacty.cn/data/20190530/1559196589853977699484.png)
 
@@ -1114,11 +1112,11 @@ header.html代码，使用`nav-bind`绑定侧边栏菜单：
 
 ### 8.2 使用扩展图标
 1. Font class图标使用(<font color=red>推荐</font>)
-```
+```html
 	<i class="zbxico zbx-xxx"></i>
 ```
-2. Symbol图标使用(common.js文件中JS一定要引入),使用页面加入通用css代码(支持多色图标了，不再受单色限制)
-```
+2. Symbol图标使用(`common.js`文件中JS一定要引入),使用页面加入通用css代码(支持多色图标了，不再受单色限制)
+```css
 	<style type="text/css">
         .svgicon {
             width: 1.8em; height: 1.8em;
@@ -1128,7 +1126,7 @@ header.html代码，使用`nav-bind`绑定侧边栏菜单：
         }
     </style>
 ```
-```
+```html
 <svg class="svgicon" aria-hidden="true">
     <use xlink:href="#zbx-xxx"></use>
 </svg>
