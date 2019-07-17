@@ -649,7 +649,7 @@ popupRight | 打开右侧弹窗
 ```html
 <button lay-tips="大家好！">按钮</button>
 
-<button lay-tips="大家好！" lay-direction="2" lay-bg="#009788">按钮</button>
+<button lay-tips="大家好！" lay-direction="2" lay-bg="#009788" lay-width="500px">按钮</button>
 
 <button lay-tips="大家好！" lay-offset="10px">按钮</button>
 
@@ -658,6 +658,7 @@ popupRight | 打开右侧弹窗
 
 - `lay-direction`： 设置位置，1上面（默认）；2右边；3下面；4 左边；
 - `lay-bg`： 设置背景颜色；
+- `lay-width`：设置宽度；
 - `lay-offset`： 设置偏移距离，(上下,左右)
 
 ![](https://s2.ax1x.com/2019/07/11/Z2BGmd.png)
